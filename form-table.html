@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!---<link rel="js" href="script1.js" />--->
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="form-table.css" />
+  </head>
+  <style></style>
+  <body>
+    <div>
+      <form onsubmit="sub(); return false;" id="basic">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your first name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="india">India</option>
+        </select>
+
+        <input type="submit" value="Submit" class="re" />
+        <!--- <button onclick="sub()">Submit</button>--->
+      </form>
+
+      <br />
+      <br />
+      <table>
+        <table>
+          <tr>
+            <th><strong>First Name</strong></th>
+            <th><strong>Last Name</strong></th>
+            <th><strong>Country</strong></th>
+          </tr>
+        </table>
+        <table id="myTable"></table>
+      </table>
+      <br />
+
+      <!---<input type="reset" value="Reset" />>--->
+      <button onclick="refreshPage()">Reset</button>
+    </div>
+  </body>
+</html>
